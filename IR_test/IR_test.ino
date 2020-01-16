@@ -1,4 +1,14 @@
-//Pin: G2
+/* Beerpong bot proof of concept
+ *  
+ *  Johannes Werner
+ *  Jonas Hauptmann
+ *  
+ *  Creative Commons Zero v1.0 Universal Licence
+ * 
+ */
+  
+  //Pin: G2
+#define pin = 2;
 
 int val = 5;
 
@@ -16,7 +26,6 @@ void loop() {
     //flash lights
   }
   else
-  
   
   Serial.println(val);
   delay(10);
