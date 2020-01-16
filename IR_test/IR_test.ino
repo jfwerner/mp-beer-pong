@@ -11,6 +11,13 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   val = digitalRead(2);
+  if (val = 0){
+    Serial.print("object");
+    //flash lights
+  }
+  else
+  
+  
   Serial.println(val);
-  delay(500);
+  delay(10);
 }
