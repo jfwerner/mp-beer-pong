@@ -22,8 +22,14 @@ void loop() {
   // put your main code here, to run repeatedly:
   val = digitalRead(2);
   if (val = 0){
-    Serial.print("object");
-    //flash lights
+    for (i = 0; i < 15; i++){
+      Serial.print("object");
+      Serial.print("OOOOOO");
+      delay(100);
+      Serial.print("IIIIII");
+      delay(100);
+      //flash lights
+    }
   }
   else
   
