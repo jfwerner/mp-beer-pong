@@ -10,8 +10,6 @@
   //Pin: G2
 #define pin = 2;
 
-int val = 5;
-
 void setup() {
   // put your setup code here, to run once:
   pinMode(2, INPUT);
@@ -20,19 +18,14 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  val = digitalRead(2);
-  if (val = 0){
-    for (i = 0; i < 15; i++){
-      Serial.print("object");
-      Serial.print("OOOOOO");
-      delay(100);
-      Serial.print("IIIIII");
-      delay(100);
-      //flash lights
+  bool val = digitalRead(2);
+  
+  if (val == 0){
+    for (int i = 0; i < 30; i++) {
+    Serial.println("IIIIIII\n");
+    delay(50);
+    Serial.println("OOOOOOO\n");
+    delay(50);
     }
   }
-  else
-  
-  Serial.println(val);
-  delay(10);
 }
